@@ -27,11 +27,17 @@ console.log(a);
 
 b = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"]
 
-b.each_with_index do |x , i|
+  a = []
+b.reverse_each do |x| 
+  a << x
+  
+end
+
+   a.each_with_index do |x , i|
   if i %3==0
-    p b[i].upcase 
+    p x.upcase 
   
     else 
-      p b[i]
+      p x
 end
 end

@@ -18,11 +18,19 @@ while ( i < a.length) {
 console.log(a);
 
 .........................................................
-a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"]
+b = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"]
 
-    a.reverse_each do|n| print n, " "
-   puts
-  (2...(a.length)).step(3) do |n|
-   puts  a[n].capitalize.upcase
+  a = []
+b.reverse_each do |x| 
+  a << x
+  
+end
+
+   a.each_with_index do |x , i|
+  if i %3==0
+    p x.upcase 
+  
+    else 
+      p x
 end
 end

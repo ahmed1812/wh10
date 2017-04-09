@@ -1,0 +1,36 @@
+2. Repeat the program in 1, except, starting from the end of the array and traversing backwards.
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"];
+
+b=[];
+String.prototype.capitalize = function() {
+    return this.replace(/(?:^|\S)\S/g, function(a) { return a.toUpperCase(); });
+};
+
+var i = 2;
+while ( i < a.length) {
+    a[i] = a[i].capitalize().replace(/ -/g, ":");
+    
+    i=i+3;
+    a.reverse(a[i]);
+}
+
+console.log(a);
+
+.........................................................
+b = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"]
+
+  a = []
+b.reverse_each do |x| 
+  a << x
+  
+end
+
+   a.each_with_index do |x , i|
+  if i %3==0
+    p x.upcase 
+  
+    else 
+      p x
+end
+end

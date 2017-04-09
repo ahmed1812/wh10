@@ -1,0 +1,38 @@
+1. Write the following programs:
+ - Write a JavaScript program that will loop through array a, and capitalizes every third word.
+ - Create a Ruby program that does exactly the same thing.
+
+
+
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"];
+
+
+String.prototype.capitalize = function() {
+    return this.replace(/(?:^|\S)\S/g, function(a) { return a.toUpperCase(); });
+};
+
+var i = 2;
+while ( i < a.length) {
+    a[i] = a[i].capitalize().replace(/ -/g, ":");
+    
+    i=i+3;
+}
+
+console.log(a);
+
+
+
+................................................................
+
+b = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "sara", "henry"]
+
+b.each_with_index do |x , i|
+  if i %3==0
+    p b[i].upcase 
+  
+    else 
+      p b[i]
+end
+end
+

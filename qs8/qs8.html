@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <title><!-- Insert your title here --></title>
+<script type="text/javascript"
+ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+
+   $('.mirror1').keyup(function(event) {
+      $('.mirror2').text($('.mirror1').val());
+    });
+
+ });
+</script>
+</head>
+<body>
+<textarea class="mirror1" rows=10 cols=10></textarea>
+<textarea class="mirror2" rows=10 cols=10></textarea>
+<textarea class="mirror2" rows=10 cols=10></textarea>
+<textarea class="mirror2" rows=10 cols=10></textarea>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+
+
+var newarr = [];
+var c = [];
+var i = 0;
+while(i<b.length){
+  if (b[i] !== 0){
+    newarr.push(10*b[i]-5);
+    c.push(b[i] + newarr[i]);
+  }
+  
+  i++;
+}
+console.log(c);
+
+..........................................................
+ b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+
+
+ arr = b.collect do|x| 
+   10 *x - 5
+
+end
+b.each_with_index do |x , i|
+  p arr[i] + b[i]
+end

@@ -1,0 +1,13 @@
+4. Write the following programs:
+ - Write a JavaScript program that will print every element in a, however, it will reverse the word for every other element.
+ - Write the same program in Ruby.
+ 
+ 
+b.each_with_index do |x , i|
+  if i %2 !=0
+    p b[i].reverse 
+  end
+    if i %2 ==0
+      p b[i]
+end
+end
